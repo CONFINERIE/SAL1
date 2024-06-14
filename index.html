@@ -135,6 +135,85 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 <style>
 
+        /* General container styling */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Team section title styling */
+.w3l-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.w3layouts_header p {
+    text-align: center;
+}
+
+.team-w3l-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Styling for each team member */
+.about-poleft {
+    flex: 0 1 30%;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.about_img {
+    position: relative;
+    overflow: hidden;
+}
+
+.about_img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about_opa {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.about_opa h5 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+}
+
+.about_opa p {
+    margin: 0;
+    font-size: 1em;
+}
+
+@media (max-width: 768px) {
+    .about-poleft {
+        flex: 0 1 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-poleft {
+        flex: 0 1 100%;
+    }
+}
+
+
+
+        
         
     .sal{
         color: ghostwhite;
