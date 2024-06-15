@@ -1,85 +1,55 @@
-/* CSS pour le positionnement fixe */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0; /* Couleur de fond de la page */
-    color: #333; /* Couleur du texte principal */
+/* Réinitialisation des marges et des paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Centrage du contenu principal */
 .container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    box-sizing: border-box;
+  width: 100%; /* Utilisation de 100% de la largeur disponible */
+  max-width: 1200px; /* Largeur maximale pour le contenu afin de ne pas devenir trop large sur les grands écrans */
+  margin: 0 auto; /* Centrer le contenu horizontalement */
+  padding: 20px; /* Ajout de padding autour du contenu pour l'aérer */
 }
 
-/* Fixer le header en haut de la page */
-header {
-    
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #fff; /* Couleur de fond du header */
-    z-index: 1000; /* Assure que le header est au-dessus du contenu */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+/* Styles pour le contenu spécifique */
+.content {
+  text-align: justify; /* Justification du texte pour une meilleure lisibilité */
+  line-height: 1.6; /* Hauteur de ligne pour un espacement optimal entre les lignes de texte */
 }
 
-/* Ajuster le contenu sous le header fixe */
-#header {
-    padding-top: 120px; /* Ajustement pour le header fixe */
+/* Media queries pour la mise en page responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px; /* Réduire le padding sur les écrans plus petits */
+  }
 }
 
-/* Ajuster le contenu sous le header fixe */
-.about-top {
-    padding-top: 200px; /* Ajustement pour le header fixe */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 5px; /* Encore moins de padding sur les écrans très petits */
+  }
 }
 
-/* Ajuster le contenu sous le header fixe */
-.video-player {
-    padding-top: 120px; /* Ajustement pour le header fixe */
-}
-
-/* Fixer le footer en bas de la page */
-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #333; /* Couleur de fond du footer */
-    color: #fff; /* Couleur du texte du footer */
-    padding: 10px 0;
-    text-align: center;
-}
-
-/* Styling général pour les sections */
+/* Exemple de styles pour les sections ou les colonnes */
 .section {
-    padding: 80px 0;
-    background-color: #fff; /* Couleur de fond des sections */
+  width: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
-/* Media queries pour assurer la responsivité */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    header {
-        padding-top: 80px; /* Ajustement pour les appareils plus petits */
-    }
-    .video-player,
-    .about-top {
-        padding-top: 80px; /* Ajustement pour les appareils plus petits */
-    }
+.column {
+  width: 50%;
+  float: left;
+  padding: 10px;
 }
 
-@media (max-width: 480px) {
-    header {
-        padding-top: 60px; /* Ajustement pour les appareils encore plus petits */
-    }
-    .video-player,
-    .about-top {
-        padding-top: 60px; /* Ajustement pour les appareils encore plus petits */
-    }
+@media screen and (max-width: 768px) {
+  .column {
+    width: 100%; /* Sur les écrans plus petits, chaque colonne prend toute la largeur */
+    float: none; /* Plus de flottement pour les colonnes sur les écrans plus petits */
+  }
 }
