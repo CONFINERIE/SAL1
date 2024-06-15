@@ -18,7 +18,7 @@ body {
 
 /* Fixer le header en haut de la page */
 header {
-    position: fixed;
+    
     top: 0;
     left: 0;
     width: 100%;
