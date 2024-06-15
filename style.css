@@ -1,10 +1,130 @@
-
-
-/* Reset et styles de base */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+/* Réinitialisation des marges et des paddings pour tous les éléments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header */
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Couleur de fond */
+}
+
+/* Contenu principal centré et limité en largeur */
+.container {
+    width: 90%; /* Largeur de votre contenu */
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centre le contenu horizontalement */
+    padding: 20px; /* Espacement intérieur */
+}
+
+/* En-tête */
+header {
+    background-color: #333; /* Couleur de fond de l'en-tête */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 0; /* Espacement intérieur haut/bas */
+}
+
+/* Navigation */
+.navbar-nav {
+    list-style-type: none; /* Supprime les puces */
+    text-align: center; /* Centre les liens */
+    margin-top: 10px; /* Espacement en haut */
+}
+
+.nav-item {
+    display: inline-block; /* Affichage en ligne des éléments */
+    margin: 0 10px; /* Marge à gauche/droite des éléments */
+}
+
+.nav-link {
+    text-decoration: none; /* Supprime les soulignements des liens */
+    color: #fff; /* Couleur du texte */
+    font-weight: bold; /* Police en gras */
+    font-size: 18px; /* Taille de la police */
+}
+
+/* Sections */
+section {
+    padding: 40px 0; /* Espacement intérieur haut/bas des sections */
+    background-color: #fff; /* Couleur de fond des sections */
+}
+
+/* Pied de page */
+footer {
+    background-color: #333; /* Couleur de fond du pied de page */
+    color: #fff; /* Couleur du texte */
+    padding: 20px 0; /* Espacement intérieur haut/bas */
+    text-align: center; /* Centre le texte */
+}
+
+/* Styles spécifiques à chaque section */
+.about-top {
+    background-color: #f0f0f0; /* Couleur de fond spécifique à la section */
+    padding: 50px 0; /* Espacement intérieur haut/bas spécifique */
+}
+
+.services {
+    background-color: #f9f9f9; /* Couleur de fond spécifique à la section */
+    padding: 50px 0; /* Espacement intérieur haut/bas spécifique */
+}
+
+.team-w3l {
+    background-color: #f0f0f0; /* Couleur de fond spécifique à la section */
+    padding: 50px 0; /* Espacement intérieur haut/bas spécifique */
+}
+
+.contact {
+    background-color: #f9f9f9; /* Couleur de fond spécifique à la section */
+    padding: 50px 0; /* Espacement intérieur haut/bas spécifique */
+}
+
+/* Styles spécifiques à des éléments individuels */
+h1, h2, h3, h4, h5, h6 {
+    color: #333; /* Couleur du texte des titres */
+    margin-bottom: 20px; /* Marge inférieure pour les titres */
+}
+
+p {
+    color: #666; /* Couleur du texte des paragraphes */
+    font-size: 16px; /* Taille de la police des paragraphes */
+    line-height: 1.8; /* Hauteur de ligne des paragraphes */
+}
+
+/* Image dans la galerie */
+.gallery-grid img {
+    width: 100%; /* Image à 100% de largeur */
+    height: auto; /* Hauteur automatique en proportion */
+}
+
+/* Position absolue du texte sur les images */
+.textbox {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir */
+    color: #fff; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement intérieur */
+}
+
+/* Taille et couleur des icônes */
+.fa {
+    font-size: 24px; /* Taille de la police */
+    color: #fff; /* Couleur du texte */
+}
+
+/* Média queries pour la réactivité */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Largeur du contenu à 90% pour les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Largeur du contenu à 100% pour les écrans très petits */
+        padding: 10px; /* Espacement intérieur plus petit */
+    }
+}
