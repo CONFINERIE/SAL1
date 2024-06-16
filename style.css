@@ -5,6 +5,29 @@
   box-sizing: border-box;
 }
 
+o
+/* Réinitialisation des marges et des paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Centrage du contenu principal */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden; /* Empêche le défilement horizontal */
+}
+
+/* Styles pour le contenu spécifique */
+.container {
+  width: 80%; /* Largeur du contenu, ajustable selon vos besoins */
+  max-width: 1200px; /* Largeur maximale pour le contenu afin de ne pas devenir trop large sur les grands écr
+
+
 /* Centrage du contenu principal */
 .container {
   width: 100%; /* Utilisation de 100% de la largeur disponible */
