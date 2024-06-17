@@ -81,7 +81,12 @@ section h2 {
 
 /* Responsive Design */
 
+
 /* Phones */
+
+@media only screen and (max-width: 600px) {
+  /* Styles pour les écrans de téléphone portable */
+}
 @media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
