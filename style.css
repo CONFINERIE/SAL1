@@ -1,5 +1,85 @@
 
 
+
+
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff;
+}
+
+header nav a:hover {
+  color: #ccc;
+}
+
+/* Section Styles */
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
 /* Responsive Design */
 
 /* Phones */
@@ -49,60 +129,3 @@
     padding: 20px;
   }
 }
-
-
-
-
-
-
-
-/* Responsive Design */
-
-/* Phones */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  header {
-    padding: 10px;
-  }
-  header h1 {
-    font-size: 18px;
-  }
-  section {
-    padding: 10px;
-  }
-}
-
-/* Tablets */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-  }
-  header {
-    padding: 15px;
-  }
-  header h1 {
-    font-size: 20px;
-  }
-  section {
-    padding: 15px;
-  }
-}
-
-/* Desktops */
-@media only screen and (min-width: 1025px) {
-  body {
-    font-size: 18px;
-  }
-  header {
-    padding: 20px;
-  }
-  header h1 {
-    font-size: 24px;
-  }
-  section {
-    padding: 20px;
-  }
-}
-
