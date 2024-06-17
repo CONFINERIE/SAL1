@@ -1,47 +1,128 @@
-/* Écran de téléphone (max-width: 480px) */
-@media only screen and (max-width: 480px) {
-  /* Règles de style pour les écrans de tél��phone */
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
+header nav a {
+  color: #fff;
+}
+
+header nav a:hover {
+  color: #ccc;
+}
+
+/* Section Styles */
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+/* Phones */
+@media only screen and (max-width: 600px) {
   body {
     font-size: 14px;
   }
-  .container {
-    width: 90%;
-    margin: 0 auto;
+  header {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  section {
+    padding: 10px;
   }
 }
 
-/* Écran de tablette (min-width: 481px et max-width: 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* Règles de style pour les écrans de tablette */
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   body {
     font-size: 16px;
   }
-  .container {
-    width: 80%;
-    margin: 0 auto;
+  header {
+    padding: 15px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  section {
+    padding: 15px;
   }
 }
 
-/* Écran d'ordinateur portable (min-width: 769px et max-width: 1024px) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Règles de style pour les écrans d'ordinateur portable */
+/* Desktops */
+@media only screen and (min-width: 1025px) {
   body {
     font-size: 18px;
   }
-  .container {
-    width: 70%;
-    margin: 0 auto;
+  header {
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  section {
+    padding: 20px;
   }
 }
 
-/* Écran d'ordinateur de bureau (min-width: 1025px) */
-@media only screen and (min-width: 1025px) {
-  /* Règles de style pour les écrans d'ordinateur de bureau */
-  body {
-    font-size: 20px;
-  }
-  .container {
-    width: 60%;
-    margin: 0 auto;
-  }
-}
