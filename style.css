@@ -1,6 +1,3 @@
-
-
-
 /* styles.css */
 
 /* Réinitialisation et styles de base */
@@ -10,63 +7,82 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+html, body {
+    width: 100%;
     overflow-x: hidden; /* Empêche les débordements horizontaux */
 }
 
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
 header {
-    background-color: #333;
+    background-color: #232f3e; /* Couleur similaire à Amazon */
     color: white;
     padding: 1em;
     text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 1em;
+    margin: 0.5em;
 }
 
 main {
     padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow-x: hidden; /* Empêche les débordements horizontaux dans le contenu principal */
+}
+
+section {
+    margin-bottom: 2em;
 }
 
 footer {
-    background-color: #333;
+    background-color: #232f3e;
     color: white;
     text-align: center;
     padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 /* Styles pour les écrans de petite taille */
 @media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 0.5em 0;
+    header, footer {
+        padding: 0.5em;
+    }
+
+    main {
+        padding: 0.5em;
     }
 }
 
 /* Styles pour les écrans de taille moyenne */
 @media (min-width: 601px) and (max-width: 1024px) {
     main {
-        padding: 2em;
+        padding: 1.5em;
     }
 }
 
 /* Styles pour les écrans larges */
 @media (min-width: 1025px) {
     main {
-        padding: 3em;
+        padding: 2em;
     }
 }
-
-
-
-
