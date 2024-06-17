@@ -1,207 +1,129 @@
-/* Reset some basic elements */
+
+
+/* Global Styles */
+
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Basic styling for the body */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  color: #333;
+  background-color: #f9f9f9;
 }
 
-/* Container */
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333;
 }
 
-/* Header styling */
-header {
-  background: #333;
-  color: #fff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #77aaff 3px solid;
-}
-
-header a {
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-
-header ul {
-  padding: 0;
-  list-style: none;
-}
-
-header li {
-  display: inline;
-  padding: 0 20px 0 20px;
-}
-
-header .logo {
-  font-size: 24px;
-  text-align: center;
-}
-
-/* Services section */
-.services {
-  padding: 30px 0;
-  background: #fff;
-}
-
-.services .container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.services .services-w3ls-row {
-  width: 32%;
-  background: #f4f4f4;
+p {
   margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Header Styles */
+
+header {
+  background-color: #333;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-.services .services-w3ls-row h1 {
-  color: #333;
+header h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.services .services-w3ls-row p {
-  color: #666;
-}
-
-/* Gallery section */
-.portfolio-w3ls {
-  padding: 30px 0;
-  background: #fff;
-}
-
-.portfolio-w3ls .gallery-grid {
-  width: 23%;
-  margin: 1%;
-  display: inline-block;
-  position: relative;
-}
-
-.portfolio-w3ls .gallery-grid img {
-  width: 100%;
-  height: auto;
-}
-
-/* Team section */
-.team-w3l {
-  padding: 30px 0;
-  background: #f4f4f4;
-}
-
-.team-w3l .about-poleft {
-  width: 30%;
-  margin: 1%;
-  display: inline-block;
-  background: #fff;
-  text-align: center;
-}
-
-.team-w3l .about-poleft img {
-  width: 100%;
-  height: auto;
-}
-
-/* Contact section */
-.contact {
-  padding: 30px 0;
-  background: #fff;
-}
-
-.contact .max-width {
-  width: 80%;
-  margin: auto;
-}
-
-.contact .contact-content {
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.contact .column {
-  width: 45%;
-  margin-bottom: 20px;
+header nav li {
+  margin-right: 20px;
 }
 
-.contact .column input, .contact .column textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-}
-
-.contact .column .button-area button {
-  padding: 10px 20px;
-  background: #333;
+header nav a {
   color: #fff;
-  border: none;
-  cursor: pointer;
 }
 
-/* Video section */
-.video-player video {
-  width: 100%;
-  height: auto;
-  margin: 20px 0;
+header nav a:hover {
+  color: #ccc;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  header .logo {
+/* Section Styles */
+
+section {
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 18px;
+  }
+  section {
+    padding: 10px;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    padding: 15px;
+  }
+  header h1 {
     font-size: 20px;
   }
-
-  header ul {
-    text-align: center;
-  }
-
-  header li {
-    display: block;
-    padding: 10px 0;
-  }
-
-  .services .container {
-    flex-direction: column;
-  }
-
-  .services .services-w3ls-row {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .portfolio-w3ls .gallery-grid {
-    width: 48%;
-  }
-
-  .team-w3l .about-poleft {
-    width: 48%;
-  }
-
-  .contact .column {
-    width: 100%;
+  section {
+    padding: 15px;
   }
 }
 
-@media (max-width: 480px) {
-  .portfolio-w3ls .gallery-grid {
-    width: 100%;
+/* Desktops */
+@media only screen and (min-width: 1025px) {
+  body {
+    font-size: 18px;
   }
-
-  .team-w3l .about-poleft {
-    width: 100%;
+  header {
+    padding: 20px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  section {
+    padding: 20px;
   }
 }
