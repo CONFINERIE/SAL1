@@ -1,78 +1,65 @@
-/* Réinitialisation des marges et des paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-o
-/* Réinitialisation des marges et des paddings */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Centrage du contenu principal */
+/* styles.css */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  overflow-x: hidden; /* Empêche le défilement horizontal */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Styles pour le contenu spécifique */
-.container {
-  width: 80%; /* Largeur du contenu, ajustable selon vos besoins */
-  max-width: 1200px; /* Largeur maximale pour le contenu afin de ne pas devenir trop large sur les grands écr
-
-
-/* Centrage du contenu principal */
-.container {
-  width: 100%; /* Utilisation de 100% de la largeur disponible */
-  max-width: 1200px; /* Largeur maximale pour le contenu afin de ne pas devenir trop large sur les grands écrans */
-  margin: 0 auto; /* Centrer le contenu horizontalement */
-  padding: 20px; /* Ajout de padding autour du contenu pour l'aérer */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
 }
 
-/* Styles pour le contenu spécifique */
-.content {
-  text-align: justify; /* Justification du texte pour une meilleure lisibilité */
-  line-height: 1.6; /* Hauteur de ligne pour un espacement optimal entre les lignes de texte */
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Media queries pour la mise en page responsive */
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 10px; /* Réduire le padding sur les écrans plus petits */
-  }
+nav ul li {
+    display: inline;
+    margin-right: 1em;
 }
 
-@media screen and (max-width: 480px) {
-  .container {
-    padding: 5px; /* Encore moins de padding sur les écrans très petits */
-  }
+main {
+    padding: 1em;
 }
 
-/* Exemple de styles pour les sections ou les colonnes */
-.section {
-  width: 100%;
-  padding: 20px;
-  background-color: #f0f0f0;
-  margin-bottom: 20px;
-  border-radius: 5px;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Pour les écrans plus petits */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 0.5em 0;
+    }
 }
 
-.column {
-  width: 50%;
-  float: left;
-  padding: 10px;
+/* Pour les écrans de taille moyenne */
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        padding: 2em;
+    }
 }
 
-@media screen and (max-width: 768px) {
-  .column {
-    width: 100%; /* Sur les écrans plus petits, chaque colonne prend toute la largeur */
-    float: none; /* Plus de flottement pour les colonnes sur les écrans plus petits */
-  }
+/* Pour les grands écrans */
+@media (min-width: 1025px) {
+    main {
+        padding: 3em;
+    }
 }
+
+
+
+
+
