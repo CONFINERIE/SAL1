@@ -1,10 +1,19 @@
 
+
+
 /* styles.css */
-body {
-    font-family: Arial, sans-serif;
+
+/* Réinitialisation et styles de base */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden; /* Empêche les débordements horizontaux */
 }
 
 header {
@@ -17,11 +26,12 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 1em;
+    display: inline-block;
+    margin: 0 1em;
 }
 
 main {
@@ -33,11 +43,9 @@ footer {
     color: white;
     text-align: center;
     padding: 1em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
-/* Pour les écrans plus petits */
+
+/* Styles pour les écrans de petite taille */
 @media (max-width: 600px) {
     nav ul li {
         display: block;
@@ -45,20 +53,19 @@ footer {
     }
 }
 
-/* Pour les écrans de taille moyenne */
+/* Styles pour les écrans de taille moyenne */
 @media (min-width: 601px) and (max-width: 1024px) {
     main {
         padding: 2em;
     }
 }
 
-/* Pour les grands écrans */
+/* Styles pour les écrans larges */
 @media (min-width: 1025px) {
     main {
         padding: 3em;
     }
 }
-
 
 
 
