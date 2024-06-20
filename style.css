@@ -1,2 +1,48 @@
 
+/* Écran de téléphone (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+  /* Règles de style pour les écrans de tél��phone */
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
 
+/* Écran de tablette (min-width: 481px et max-width: 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  /* Règles de style pour les écrans de tablette */
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+/* Écran d'ordinateur portable (min-width: 769px et max-width: 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Règles de style pour les écrans d'ordinateur portable */
+  body {
+    font-size: 18px;
+  }
+  .container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+/* Écran d'ordinateur de bureau (min-width: 1025px) */
+@media only screen and (min-width: 1025px) {
+  /* Règles de style pour les écrans d'ordinateur de bureau */
+  body {
+    font-size: 20px;
+  }
+  .container {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
