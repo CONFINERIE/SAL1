@@ -1,146 +1,102 @@
-
-/* Écran de téléphone (max-width: 480px) */
-@media only screen and (max-width: 480px) {
-  /* Règles de style pour les écrans de tél��phone */
-  body {
-    font-size: 14px;
-  }
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* Écran de tablette (min-width: 481px et max-width: 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* Règles de style pour les écrans de tablette */
-  body {
-    font-size: 16px;
-  }
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Écran d'ordinateur portable (min-width: 769px et max-width: 1024px) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Règles de style pour les écrans d'ordinateur portable */
-  body {
-    font-size: 18px;
-  }
-  .container {
-    width: 70%;
-    margin: 0 auto;
-  }
+header {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-/* Écran d'ordinateur de bureau (min-width: 1025px) */
-@media only screen and (min-width: 1025px) {
-  /* Règles de style pour les écrans d'ordinateur de bureau */
-  body {
-    font-size: 20px;
-  }
-  .container {
-    width: 60%;
-    margin: 0 auto;
-
-    
-  }
+h1 {
+    color: #2c3e50;
 }
 
-
-
-/* iPhone 4 et 4S */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 480px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  /* Règles CSS pour iPhone 4 et 4S */
+h2 {
+    color: #34495e;
+    margin-bottom: 10px;
 }
 
-/* iPhone 5, 5S, 5C et 5SE */
-@media only screen 
-and (min-device-width: 320px) 
-and (max-device-width: 568px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  /* Règles CSS pour iPhone 5, 5S, 5C et 5SE */
+section {
+    margin-bottom: 20px;
 }
 
-/* iPhone 6, 6S, 7 et 8 */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px)
-and (-webkit-min-device-pixel-ratio: 2) {
-  /* Règles CSS pour iPhone 6, 6S, 7 et 8 */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* iPhone 6+, 7+ et 8+ */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px)
-and (-webkit-min-device-pixel-ratio: 3) {
-  /* Règles CSS pour iPhone 6+, 7+ et 8+ */
+.gallery img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
 }
 
-/* iPhone X */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 812px)
-and (-webkit-min-device-pixel-ratio: 3) {
-  /* Règles CSS pour iPhone X */
+.team-member {
+    text-align: center;
+    margin-bottom: 10px;
 }
 
-/* Samsung Galaxy S3 */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 2) {
-  /* Règles CSS pour Samsung Galaxy S3 */
+.team-member img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 50%;
 }
 
-/* Samsung Galaxy S4, S5 et Note 3 */
-@media screen 
-and (device-width: 320px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) {
-  /* Règles CSS pour Samsung Galaxy S4, S5 et Note 3 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Samsung Galaxy S6 */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 4) {
-  /* Règles CSS pour Samsung Galaxy S6 */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Google Pixel */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 3) {
-  /* Règles CSS pour Google Pixel */
+button {
+    padding: 10px;
+    border: none;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Google Pixel XL */
-@media screen 
-and (device-width: 360px) 
-and (device-height: 640px) 
-and (-webkit-device-pixel-ratio: 4) {
-  /* Règles CSS pour Google Pixel XL */
+button:hover {
+    background-color: #34495e;
 }
 
-/* Nexus 4 */
-@media screen 
-and (device-width: 384px) 
-and (device-height: 592px) 
-and (-webkit-device-pixel-ratio: 2) {
-  /* Règles CSS pour Nexus 4 */
+footer {
+    text-align: center;
+    margin-top: 20px;
 }
 
-/* Nexus 5 */
-@media screen 
-and (device-
+@media (min-width: 600px) {
+    .gallery {
+        justify-content: space-around;
+    }
 
+    .team-member {
+        display: inline-block;
+        width: 45%;
+    }
+}
 
+@media (min-width: 768px) {
+    .team-member {
+        width: 30%;
+    }
+}
