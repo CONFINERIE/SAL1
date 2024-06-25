@@ -378,3 +378,24 @@ span.grid-w3l-ser {
     margin: .8em 0 0 !important;
 }
 .services-grid.agileits-w3layouts
+
+
+
+/* Exemple de media query pour améliorer la réactivité */
+@media (max-width: 768px) {
+    .settings-container {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group select {
+        padding: 8px;
+    }
+
+    .form-group button {
+        padding: 8px;
+    }
+}
+
+
+
