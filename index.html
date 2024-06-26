@@ -1,7 +1,5 @@
 
-
-
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
 
@@ -38,16 +36,16 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <header>
       <div class="de">
     <video autoplay loop muted plays-inline class="black">
-        <source src="VD.avi" type="video/mp4">
+        <source src="VD.mp4" type="video/mp4">
     </video>
      
 
 <section id="header">
 
     <div class="website-header">
-                <img src="./img/ST167.JPG">
-            
+                <img src="./img/ST167.jpg">
              
+              
  <h1>
                 <a href="#" class="logo"><span>CONFINERIE</span> <br>FREQUENTER AU GHANA TODAY</a>
                     
@@ -62,13 +60,24 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
   <br>
     
     
-
+  <a href="#" class="logo"><span>R</span>esto</a>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navbar">
+        <li><a href="#banniere" onclick="toggleMenu();">Accueil</a></li>
+        <li><a href="#apropos" onclick="toggleMenu();">A propos</a></li>
+        <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+        <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
+        <li><a href="#temoignage" onclick="toggleMenu();">Temoignage</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        <a href="#" class="btn-reserve"onclick="toggleMenu();">Reservation</a>
+    </ul>
 
 
  
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="#btext">HOME</a>
+     <div class="menuToggle" onclick="toggleMenu();"></div>    
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#about">A propos </a>
@@ -93,14 +102,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
   <br>
   <h1>-</h1>
-            </nav> 
+            </nav>
             <div class="breaking-news-section">
-                <span id="btext">Découvrez nos services</span>
+                <span id="btext">Breaking News</span>
                 <marquee direction="left" onmouseover="this.stop()" onmouseout="this.start()">
                     <a href="#" class="breaking-news">
                         <p class="bntime">Etudier Au Ghana</p>
                         Ecole de langue</a>
-                             <a href="#" class="breaking-news"><p class="bntime">Etudier Au Ghana</p>L'enseignement primaire et secondaire</a>
+
                     <a href="#" class="breaking-news"><p class="bntime">Etudier Au Ghana</p>Etudes universitaire</a>
                     <a href="#" class="breaking-news"><p class="bntime">Etudier Au Ghana</p>Formation professionelle</a>
  <a href="#" class="breaking-news"><p class="bntime">Etudier Au Ghana</p>Papier administractif</a>
@@ -133,50 +142,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 
 <style>
-        img {
-  max-width: 100%;
-  height: auto;
-}
 
 
-        .container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.item {
-  flex: 1 1 300px; /* s'adapte à au moins 300px */
-  margin: 10px;
-}
-
-
-/* Styles pour les téléphones */
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    padding: 10px;
-  }
-}
-
-/* Styles pour les tablettes */
-@media (min-width: 601px) and (max-width: 1024px) {
-  .container {
-    width: 90%;
-    padding: 20px;
-  }
-}
-
-/* Styles pour les ordinateurs */
-@media (min-width: 1025px) {
-  .container {
-    width: 80%;
-    padding: 30px;
-  }
-}
-
-        
-
-        
     .sal{
         color: ghostwhite;
         background: black;
@@ -321,12 +288,12 @@ background: red;
 
 
 <section class="portfolio-w3ls" id="gallery">
-        <h3 class="w3l-title">NOTRE GALERIE</h3>
+        <h3 class="w3l-title">Our Gallery</h3>
         <div class="w3layouts_header">
             <p><i class="fa fa-graduation-cap" aria-hidden="true"></i></p>
         </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/E02.JPG" class="img-responsive" alt="/">
+                    <img src="./img/E02.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -335,7 +302,7 @@ background: red;
                 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
                     <img src=
-                      "./img/E05.JPG" class="img-responsive" alt="/">
+                      "./img/E05.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -343,7 +310,7 @@ background: red;
                 </a>
                 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/d48.JPG" class="img-responsive" alt="/">
+                    <img src="./img/i1.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa  fa-picture-o" aria-hidden="true"></i></p>
@@ -351,7 +318,7 @@ background: red;
                 </a>
                 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/08.JPG" class="img-responsive" alt="/">
+                    <img src="./img/08.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -359,7 +326,7 @@ background: red;
                 </a>
                 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/69.JPG" class="img-responsive" alt="/">
+                    <img src="./img/69.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -367,7 +334,7 @@ background: red;
                    </a>
                 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/O1.JPG" class="img-responsive" alt="/">
+                    <img src="./img/O1.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -375,7 +342,7 @@ background: red;
                    </a>
                 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/J72.JPG" class="img-responsive" alt="/">
+                    <img src="./img/J72.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -384,7 +351,7 @@ background: red;
                 </div>
                     <div class="col-md-3
                     gallery-grid gallery1">
-                   <img src="./img/7.JPG" class="img-responsive" alt="/">
+                   <img src="./img/7.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -392,7 +359,7 @@ background: red;
                 </a>
 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/I0.JPG" class="img-responsive" alt="/">
+                    <img src="./img/I0.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -400,7 +367,7 @@ background: red;
                 </a>
                 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/9.JPG" class="img-responsive" alt="/">
+                    <img src="./img/9.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -408,7 +375,7 @@ background: red;
                 </a>
                 </div>
                 <div class="col-md-3 col-xs-3 gallery-grid gallery1">
-                    <img src="./img/i3.JPG" class="img-responsive" alt="/">
+                    <img src="./img/i3.jpg" class="img-responsive" alt="/">
                         <div class="textbox">
                         <h4>CONFINERIE</h4>
                             <p><i class="fa fa-picture-o" aria-hidden="true"></i></p>
@@ -428,18 +395,18 @@ background: red;
 
            
             <div class="col-md-4 col-xs-4 about-poleft t2">
-                <div class="about_img"><img src="./img/07.JPG" alt="">
-                  <h5>Mr.Ndombi-D'otala</h5>
-                        <div class="about_opa">
+                <div class="about_img"><img src="./img/07.jpg" alt="">
+                  <h5>Ndombi-D'otala</h5>
+                  <div class="about_opa">
                     <p>Agents immobilliers</p>
-                     <ul class="fb_icons2 text-center">
-                      
+                    <ul class="fb_icons2 text-center">
+                         </ul>
                   </div>
                 </div>
             </div>
             <div class="col-md-4 col-xs-4 about-poleft t3">
-                <div class="about_img"><img src="./img/28.JPG" alt="">
-                  <h5>Mr.Essongue</h5>
+                <div class="about_img"><img src="./img/28.jpg" alt="">
+                  <h5>Essongue</h5>
                   <div class="about_opa">
                     <p>Responsable administratif</p>
                     <ul class="fb_icons2 text-center">
@@ -466,8 +433,8 @@ background: red;
 
 
           <div class="col-md-4 col-xs-4 about-poleft t2">
-                <div class="about_img"><img src="./img/DX57.JPG" alt="">
-                  <h5>Mr.Tsitsaba</h5>
+                <div class="about_img"><img src="./img/DX57.jpg" alt="">
+                  <h5>Tsitsaba</h5>
                   <div class="about_opa">
                     <p>Charge d'orientation</p>
                     <ul class="fb_icons2 text-center">
@@ -480,8 +447,8 @@ background: red;
 
             
             <div class="col-md-4 col-xs-4 about-poleft t3">
-                <div class="about_img"><img src="./img/RS7.JPG" alt="">
-                  <h5>Mlle.Beatrice Ibomongat</h5>
+                <div class="about_img"><img src="./img/RS7.jpg" alt="">
+                  <h5>Beatrice Ibomongat</h5>
                   <div class="about_opa">
                     <p>Charge de communication</p>
                     <ul class="fb_icons2 text-center">
@@ -521,16 +488,13 @@ background: red;
                                 <div class="sub-title"></div>
                                 +233 241531994
                             </div>
+                       
 
-                                 <div class="row">
-    <i class="fas fa-user"></i>
-    <div class="info">
-        <div class="head">WhatsApp number</div>
-        <div class="sub-title">
-            <a href="https://wa.me/+905065229531" target="_blank">+90 506 522 95 31</a>
-        </div>
-    
-            <div class="row">
+
+
+
+                        </div>
+                        <div class="row">
                             <i class="fas fa-envelope"></i>
                             <div class="info">
                                 <div class="head">Email</div>
@@ -539,18 +503,9 @@ background: red;
                         </div>
                     </div>
                 </div>
-                      
-    
-   
-    
                 <div class="column right">
-                         
-
-                        
                     <div class="text">Message me</div>
-                    <form> 
-                            <p id="confirmation" style="display: none;">Merci pour votre message. Nous vous répondrons dès que possible.</p>
- 
+                    <form action="index.html" method="post">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" name="name" placeholder="Name" required>
@@ -561,8 +516,7 @@ background: red;
                         </div>
                         <div class="field">
                             <input type="text" name="phone" placeholder="Phone" required>
-                       </div>
-                             
+                        </div>
                         <div class="field textarea">
                             <textarea cols="30" rows="10" name="message"  placeholder="Message.."  required></textarea>
                         </div>
@@ -580,5 +534,7 @@ background: red;
     </body>
 
 </html>
+
+
 
 
