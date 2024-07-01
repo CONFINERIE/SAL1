@@ -688,7 +688,7 @@ section .title::after{
   
 
 /* Mobile devices (max-width: 480px) */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 390px) {
   /* Adjust font sizes, padding, and margins for mobile devices */
   body {
     font-size: 14px;
